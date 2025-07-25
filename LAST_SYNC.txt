@@ -1,0 +1,3 @@
+Last sync attempt: $TIMESTAMP
+Status: Updated
+Source: https://sqlite.org/althttpd/
