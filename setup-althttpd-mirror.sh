@@ -6,6 +6,49 @@ set -e  # Exit on error
 
 echo "Setting up althttpd mirror repository..."
 
+# Create README.md
+cat > README.md << 'EOF'
+# Althttpd Mirror
+
+This repository automatically mirrors the althttpd web server source code from the SQLite project.
+
+## About Althttpd
+
+Althttpd is a simple web server that has run the https://sqlite.org/ website since 2004. Althttpd strives for simplicity, security, and low resource usage.
+
+## License
+
+Althttpd is in the public domain. The original source includes the following notice:
+
+```
+The author disclaims copyright to this source code. In place of
+a legal notice, here is a blessing:
+
+May you do good and not evil.
+May you find forgiveness for yourself and forgive others.
+May you share freely, never taking more than you give.
+```
+
+## Source
+
+The original source is maintained at: https://sqlite.org/althttpd/
+
+## Automatic Synchronization
+
+This repository is automatically synchronized daily using GitHub Actions.
+
+## Files
+
+- `althttpd.c` - Main source file
+- `althttpd.md` - Documentation
+- `Makefile` - Build file
+- Additional documentation files
+
+## Building
+
+Please refer to the original documentation at https://sqlite.org/althttpd/doc/trunk/althttpd.md for build instructions.
+EOF
+
 # Create necessary directories
 mkdir -p .github/workflows
 
@@ -115,10 +158,10 @@ jobs:
       run: |
         TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
         cat > LAST_SYNC.txt << EOF_SYNC
-Last sync attempt: $TIMESTAMP
-Status: ${{ steps.changes.outputs.has_changes == 'true' && 'Updated' || 'No changes' }}
-Source: https://sqlite.org/althttpd/
-EOF_SYNC
+        Last sync attempt: $TIMESTAMP
+        Status: ${{ steps.changes.outputs.has_changes == 'true' && 'Updated' || 'No changes' }}
+        Source: https://sqlite.org/althttpd/
+        EOF_SYNC
 
         git add LAST_SYNC.txt
         git diff --staged --quiet || {
@@ -165,7 +208,9 @@ EOF
 
 # Add all files and commit
 git add -A
-git commit -m "Add GitHub Actions workflow for automatic synchronization" \
+git commit -m "Initial setup with GitHub Actions workflow" \
+           -m "- Added README.md with project description" \
+           -m "- Added GitHub Actions workflow for automatic synchronization" \
            -m "- Daily sync at 00:00 UTC" \
            -m "- Manual trigger available" \
            -m "- Downloads source files from SQLite repository" \
@@ -181,3 +226,6 @@ echo "  1. Go to your repository on GitHub"
 echo "  2. Click on 'Actions' tab"
 echo "  3. Select 'Sync Althttpd Source' workflow"
 echo "  4. Click 'Run workflow'"
+echo ""
+echo "Or use GitHub CLI:"
+echo "  gh workflow run 'Sync Althttpd Source'"

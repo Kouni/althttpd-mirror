@@ -101,7 +101,7 @@ jobs:
     - name: Create sync status file
       run: |
         TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-        cat > LAST_SYNC.txt << 'EOF_SYNC'
+        cat > LAST_SYNC.txt << EOF_SYNC
         Last sync attempt: $TIMESTAMP
         Status: ${{ steps.changes.outputs.has_changes == 'true' && 'Updated' || 'No changes' }}
         Source: https://sqlite.org/althttpd/
