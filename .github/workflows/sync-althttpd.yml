@@ -50,19 +50,19 @@ jobs:
 
         # Create NOTICE file for attribution
         cat > NOTICE << 'NOTICE_EOF'
-This is a mirror of the althttpd web server from the SQLite project.
+        This is a mirror of the althttpd web server from the SQLite project.
 
-Original source: https://sqlite.org/althttpd/
+        Original source: https://sqlite.org/althttpd/
 
-The althttpd source code is in the public domain, with the following notice:
+        The althttpd source code is in the public domain, with the following notice:
 
-The author disclaims copyright to this source code. In place of
-a legal notice, here is a blessing:
+        The author disclaims copyright to this source code. In place of
+        a legal notice, here is a blessing:
 
-May you do good and not evil.
-May you find forgiveness for yourself and forgive others.
-May you share freely, never taking more than you give.
-NOTICE_EOF
+        May you do good and not evil.
+        May you find forgiveness for yourself and forgive others.
+        May you share freely, never taking more than you give.
+        NOTICE_EOF
 
     - name: Check for changes
       id: changes
