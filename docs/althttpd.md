@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <base href="https://sqlite.org/althttpd/doc/trunk/althttpd.md">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-504bd620c060e6c5aa63f067fee2b160bcec648f801afb13'; style-src 'self' 'unsafe-inline'; img-src * data:">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-e124bf182ffb4ffc5a82be5c7c99d62ec3f6bc1364389ad9'; style-src 'self' 'unsafe-inline'; img-src * data:">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Althttpd: The Althttpd Webserver</title>
 <link rel="alternate" type="application/rss+xml" title="RSS Feed"  href="/althttpd/timeline.rss">
@@ -41,7 +41,7 @@ one connection.  A single althttpd
 process will handle one or more HTTP requests over the same connection.
 When the connection closes, the althttpd process exits.</p>
 
-<p>These days, though, Althttpd often operates stand-alone.
+<p>Althttpd was later enhanced to offer a stand-alone mode option.
 In stand-alone mode, althttpd itself listens on port
 80 and/or port 443 for incoming HTTP requests,
 then forks a copy of itself to handle each inbound connection.  Each
@@ -366,7 +366,7 @@ reset.</p>
 <code>-DBANISH_TIME=N</code>, where N is a number of seconds defaulting to 300.</p>
 
 </div>
-<script nonce='504bd620c060e6c5aa63f067fee2b160bcec648f801afb13'>/* builtin.c:637 */
+<script nonce='e124bf182ffb4ffc5a82be5c7c99d62ec3f6bc1364389ad9'>/* builtin.c:637 */
 (function(){
 if(window.NodeList && !NodeList.prototype.forEach){NodeList.prototype.forEach = Array.prototype.forEach;}
 if(!window.fossil) window.fossil={};
@@ -386,22 +386,22 @@ if(fossil.config.skin.isDark) document.body.classList.add('fossil-dark-style');
 window.fossil.page = {name:"doc/trunk/althttpd.md"};
 })();
 </script>
-<script nonce='504bd620c060e6c5aa63f067fee2b160bcec648f801afb13'>/* doc.c:434 */
+<script nonce='e124bf182ffb4ffc5a82be5c7c99d62ec3f6bc1364389ad9'>/* doc.c:434 */
 window.addEventListener('load', ()=>window.fossil.pikchr.addSrcView(), false);
 </script>
 </div>
 <footer>
 This page was generated in about
-0.008s by
+0.007s by
 Fossil 2.28 [ddd1c320f6] 2026-01-01 19:12:29
 </footer>
-<script nonce="504bd620c060e6c5aa63f067fee2b160bcec648f801afb13">/* style.c:903 */
+<script nonce="e124bf182ffb4ffc5a82be5c7c99d62ec3f6bc1364389ad9">/* style.c:903 */
 function debugMsg(msg){
 var n = document.getElementById("debugMsg");
 if(n){n.textContent=msg;}
 }
 </script>
-<script nonce='504bd620c060e6c5aa63f067fee2b160bcec648f801afb13'>
+<script nonce='e124bf182ffb4ffc5a82be5c7c99d62ec3f6bc1364389ad9'>
 /* hbmenu.js *************************************************************/
 (function() {
 var hbButton = document.getElementById("hbbtn");
