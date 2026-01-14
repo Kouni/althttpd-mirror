@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <base href="https://sqlite.org/althttpd/doc/trunk/althttpd.md">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-6e763b7b7ec88893d68f10205e2d63cb13eb41e1bddf91f6'; style-src 'self' 'unsafe-inline'; img-src * data:">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-d98072adfdd53de7738cb1a36477c05937dbcd48c2ba0323'; style-src 'self' 'unsafe-inline'; img-src * data:">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Althttpd: The Althttpd Webserver</title>
 <link rel="alternate" type="application/rss+xml" title="RSS Feed"  href="/althttpd/timeline.rss">
-<link rel="stylesheet" href="/althttpd/style.css?id=9a38740e" type="text/css">
+<link rel="stylesheet" href="/althttpd/style.css?id=35cdb061" type="text/css">
 </head>
 <body class="doc rpage-doc cpage-doc">
 <header>
@@ -32,7 +32,7 @@
 among others, since 2004.  Althttpd strives for simplicity, security,
 and low resource usage.</p>
 
-<h2>Design Philosophy</h2>
+<h2 id="design-philosophy">Design Philosophy</h2>
 <p>Althttpd was originally designed to be launched from
 <a href="./xinetd.md">xinetd</a> or
 <a href="./linode-systemd.md">systemd</a> or
@@ -75,7 +75,7 @@ stunnel4, passing the <code>-https 1</code> flag to althttpd to tell it that it 
 
 <p>The first option (using the built-in TLS) is preferred.</p>
 
-<h2>Source Code</h2>
+<h2 id="source-code">Source Code</h2>
 <p>The complete source code for althttpd is contained within <a href="/althttpd/file/althttpd.c">a single
 C-code file</a> with no dependencies outside of the
 standard C library plus OpenSSL if the ENABLE_TLS option is
@@ -105,7 +105,7 @@ ported into other build infrastructure.</p>
 <a href="./static-build.md">static build</a> so that there is no need
 to install OpenSSL on the server.</p>
 
-<h2>Setup</h2>
+<h2 id="setup">Setup</h2>
 <p>There are many ways of running Althttpd on your system.  Here
 are a few variations:</p>
 
@@ -126,7 +126,7 @@ of the althttpd process to deal with that connection.</p>
 and configuration options is in a big header comment in the
 <a href="./althttpd.c">althttpd.c source code file</a>.</p>
 
-<h2>Hosting Multiple Domains</h2>
+<h2 id="hosting-multiple-domains">Hosting Multiple Domains</h2>
 <p>Althttpd uses the HTTP_HOST header of each HTTP request to determine
 from where content should be served.
 The HTTP_HOST header is the domain name of the URL that prompted the
@@ -151,7 +151,7 @@ there are (at last count) 36 *.website folders and symbolic links, including:</p
 <li><a href="http://androwish.org">androwish_org.website</a></li>
 </ul>
 
-<h2>Website Content</h2>
+<h2 id="website-content">Website Content</h2>
 <p>Within each *.website folder:</p>
 
 <ul>
@@ -164,7 +164,7 @@ there are (at last count) 36 *.website folders and symbolic links, including:</p
 
 <p><a id="gzip"></a></p>
 
-<h2>Brotli and GZip Content Compression</h2>
+<h2 id="brotli-and-gzip-content-compression">Brotli and GZip Content Compression</h2>
 <p>Althttpd has basic support for server-side content compression, which
 often reduces the over-the-wire cost of files by more than half.
 Rather than add a dependency on a compression library to althttpd, it
@@ -181,7 +181,7 @@ however, a different file is served.</p>
 
 <p>Note that this feature only works for static files, not CGI.</p>
 
-<h2>Security Features</h2>
+<h2 id="security-features">Security Features</h2>
 <p>To defend against mischief, there are restrictions on names of files that
 althttpd will serve.  Within the request URI, all characters other than
 alphanumerics and ",-./:~" are converted into a single "_".  Furthermore,
@@ -201,7 +201,7 @@ below "/.well-known/" are allowed to begin with "." or "-" (but not
 with "..").  This exception is necessary to allow LetsEncrypt to validate
 ownership of the website.</p>
 
-<h2>Basic Authentication</h2>
+<h2 id="basic-authentication">Basic Authentication</h2>
 <p>If a file named "-auth" appears anywhere within the content hierarchy,
 then access to files in that directory requires
 <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">HTTP basic authentication</a>,
@@ -253,7 +253,7 @@ have meaning as follows:</p>
  login credentials.</p></li>
 </ul>
 
-<h2>Basic Authentication Examples</h2>
+<h2 id="basic-authentication-examples">Basic Authentication Examples</h2>
 <p>The <a href="http://www.sqlite.org/">http://www.sqlite.org/</a> website contains a "-auth" file in the
 toplevel directory as follows:</p>
 
@@ -287,7 +287,7 @@ stolen by bad guys if the request is sent via HTTP.</p>
 
 <p><a id="logfile"></a></p>
 
-<h2>Log File</h2>
+<h2 id="log-file">Log File</h2>
 <p>If the -logfile option is given on the althttpd command-line, then a single
 line is appended to the named file for each HTTP request.
 The log file is in the Comma-Separated Value or CSV format specified
@@ -333,7 +333,7 @@ something like:</p>
 
 <p><a id="ipshun"></a></p>
 
-<h2>Client IP Blocking</h2>
+<h2 id="client-ip-blocking">Client IP Blocking</h2>
 <p>If the <code>--ipshun DIRECTORY</code> option is included to althttpd and
 DIRECTORY is an absolute pathname (begins with "/") accessible from
 within the chroot jail, and if the IP address of the client appears as
@@ -367,11 +367,11 @@ reset.</p>
 <code>-DBANISH_TIME=N</code>, where N is a number of seconds defaulting to 300.</p>
 
 </div>
-<script nonce='6e763b7b7ec88893d68f10205e2d63cb13eb41e1bddf91f6'>/* builtin.c:637 */
+<script nonce='d98072adfdd53de7738cb1a36477c05937dbcd48c2ba0323'>/* builtin.c:637 */
 (function(){
 if(window.NodeList && !NodeList.prototype.forEach){NodeList.prototype.forEach = Array.prototype.forEach;}
 if(!window.fossil) window.fossil={};
-window.fossil.version = "2.28 [f312c18292] 2026-01-12 19:54:34 UTC";
+window.fossil.version = "2.28 [ef15cfce30] 2026-01-13 19:53:38 UTC";
 window.fossil.rootPath = "/althttpd"+'/';
 window.fossil.config = {projectName: "Althttpd",
 shortProjectName: "althttpd",
@@ -387,22 +387,22 @@ if(fossil.config.skin.isDark) document.body.classList.add('fossil-dark-style');
 window.fossil.page = {name:"doc/trunk/althttpd.md"};
 })();
 </script>
-<script nonce='6e763b7b7ec88893d68f10205e2d63cb13eb41e1bddf91f6'>/* doc.c:434 */
+<script nonce='d98072adfdd53de7738cb1a36477c05937dbcd48c2ba0323'>/* doc.c:434 */
 window.addEventListener('load', ()=>window.fossil.pikchr.addSrcView(), false);
 </script>
 </div>
 <footer>
 This page was generated in about
 0.007s by
-Fossil 2.28 [f312c18292] 2026-01-12 19:54:34
+Fossil 2.28 [ef15cfce30] 2026-01-13 19:53:38
 </footer>
-<script nonce="6e763b7b7ec88893d68f10205e2d63cb13eb41e1bddf91f6">/* style.c:903 */
+<script nonce="d98072adfdd53de7738cb1a36477c05937dbcd48c2ba0323">/* style.c:903 */
 function debugMsg(msg){
 var n = document.getElementById("debugMsg");
 if(n){n.textContent=msg;}
 }
 </script>
-<script nonce='6e763b7b7ec88893d68f10205e2d63cb13eb41e1bddf91f6'>
+<script nonce='d98072adfdd53de7738cb1a36477c05937dbcd48c2ba0323'>
 /* hbmenu.js *************************************************************/
 (function() {
 var hbButton = document.getElementById("hbbtn");
