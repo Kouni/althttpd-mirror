@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <base href="https://sqlite.org/althttpd/doc/trunk/althttpd.md">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-b50cbcbc4e1b9491582e6fa6a7470a24508c631367d86495'; style-src 'self' 'unsafe-inline'; img-src * data:">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-32b861895efe7689fbdc378df664bc2155f6276acdee9b2f'; style-src 'self' 'unsafe-inline'; img-src * data:">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Althttpd: The Althttpd Webserver</title>
 <link rel="alternate" type="application/rss+xml" title="RSS Feed"  href="/althttpd/timeline.rss">
-<link rel="stylesheet" href="/althttpd/style.css?id=3af4308a" type="text/css">
+<link rel="stylesheet" href="/althttpd/style.css?id=26f90" type="text/css">
 </head>
 <body class="doc rpage-doc cpage-doc">
 <header>
@@ -367,11 +367,11 @@ reset.</p>
 <code>-DBANISH_TIME=N</code>, where N is a number of seconds defaulting to 300.</p>
 
 </div>
-<script nonce='b50cbcbc4e1b9491582e6fa6a7470a24508c631367d86495'>/* builtin.c:637 */
+<script nonce='32b861895efe7689fbdc378df664bc2155f6276acdee9b2f'>/* builtin.c:637 */
 (function(){
 if(window.NodeList && !NodeList.prototype.forEach){NodeList.prototype.forEach = Array.prototype.forEach;}
 if(!window.fossil) window.fossil={};
-window.fossil.version = "2.28 [2a1a9c357e] 2026-01-26 21:26:25 UTC";
+window.fossil.version = "2.28 [6cb48bf66a] 2026-01-27 16:20:12 UTC";
 window.fossil.rootPath = "/althttpd"+'/';
 window.fossil.config = {projectName: "Althttpd",
 shortProjectName: "althttpd",
@@ -387,22 +387,22 @@ if(fossil.config.skin.isDark) document.body.classList.add('fossil-dark-style');
 window.fossil.page = {name:"doc/trunk/althttpd.md"};
 })();
 </script>
-<script nonce='b50cbcbc4e1b9491582e6fa6a7470a24508c631367d86495'>/* doc.c:434 */
+<script nonce='32b861895efe7689fbdc378df664bc2155f6276acdee9b2f'>/* doc.c:434 */
 window.addEventListener('load', ()=>window.fossil.pikchr.addSrcView(), false);
 </script>
 </div>
 <footer>
 This page was generated in about
 0.007s by
-Fossil 2.28 [2a1a9c357e] 2026-01-26 21:26:25
+Fossil 2.28 [6cb48bf66a] 2026-01-27 16:20:12
 </footer>
-<script nonce="b50cbcbc4e1b9491582e6fa6a7470a24508c631367d86495">/* style.c:903 */
+<script nonce="32b861895efe7689fbdc378df664bc2155f6276acdee9b2f">/* style.c:903 */
 function debugMsg(msg){
 var n = document.getElementById("debugMsg");
 if(n){n.textContent=msg;}
 }
 </script>
-<script nonce='b50cbcbc4e1b9491582e6fa6a7470a24508c631367d86495'>
+<script nonce='32b861895efe7689fbdc378df664bc2155f6276acdee9b2f'>
 /* hbmenu.js *************************************************************/
 (function() {
 var hbButton = document.getElementById("hbbtn");
