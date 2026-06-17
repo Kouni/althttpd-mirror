@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <base href="https://sqlite.org/althttpd/doc/trunk/althttpd.md">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-48d092b83ba694bd78a90c07acd10f4b3065942cd8292dc7'; style-src 'self' 'unsafe-inline'; img-src * data:">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-a372a7808ba9aec10a16fdd00bb4cd78bd0a3753187d1874'; style-src 'self' 'unsafe-inline'; img-src * data:">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Althttpd: The Althttpd Webserver</title>
 <link rel="alternate" type="application/rss+xml" title="RSS Feed"  href="/althttpd/timeline.rss">
-<link rel="stylesheet" href="/althttpd/style.css?id=8f7b0f4e" type="text/css">
+<link rel="stylesheet" href="/althttpd/style.css?id=875ec42f" type="text/css">
 </head>
 <body class="doc rpage-doc cpage-doc">
 <header>
@@ -367,11 +367,11 @@ reset.</p>
 <code>-DBANISH_TIME=N</code>, where N is a number of seconds defaulting to 300.</p>
 
 </div>
-<script nonce='48d092b83ba694bd78a90c07acd10f4b3065942cd8292dc7'>/* builtin.c:637 */
+<script nonce='a372a7808ba9aec10a16fdd00bb4cd78bd0a3753187d1874'>/* builtin.c:637 */
 (function(){
 if(window.NodeList && !NodeList.prototype.forEach){NodeList.prototype.forEach = Array.prototype.forEach;}
 if(!window.fossil) window.fossil={};
-window.fossil.version = "2.29 [15782c0049] 2026-06-11 12:14:29 UTC";
+window.fossil.version = "2.29 [ba00a43504] 2026-06-16 16:45:39 UTC";
 window.fossil.rootPath = "/althttpd"+'/';
 window.fossil.config = {projectName: "Althttpd",
 shortProjectName: "althttpd",
@@ -383,27 +383,27 @@ confirmerButtonTicks: 3 /*default fossil.confirmer tick count.*/,
 attachmentSizeLimit: 0,
 skin:{isDark: false/*true if the current skin has the 'white-foreground' detail*/}
 };
-window.fossil.user = {name: "guest",isAdmin: false,mayAttachForum: false,enableDebug: false};
+window.fossil.user = {name: "guest",isAdmin: false,mayAttachForum: false,enableDebug: false,isIndividual: false};
 if(fossil.config.skin.isDark) document.body.classList.add('fossil-dark-style');
 window.fossil.page = {name:"doc/trunk/althttpd.md"};
 })();
 </script>
-<script nonce='48d092b83ba694bd78a90c07acd10f4b3065942cd8292dc7'>/* doc.c:438 */
+<script nonce='a372a7808ba9aec10a16fdd00bb4cd78bd0a3753187d1874'>/* doc.c:438 */
 window.addEventListener('load', ()=>window.fossil.pikchr.addSrcView(), false);
 </script>
 </div>
 <footer>
 This page was generated in about
-0.009s by
-Fossil 2.29 [15782c0049] 2026-06-11 12:14:29
+0.008s by
+Fossil 2.29 [ba00a43504] 2026-06-16 16:45:39
 </footer>
-<script nonce="48d092b83ba694bd78a90c07acd10f4b3065942cd8292dc7">/* style.c:936 */
+<script nonce="a372a7808ba9aec10a16fdd00bb4cd78bd0a3753187d1874">/* style.c:936 */
 function debugMsg(msg){
 var n = document.getElementById("debugMsg");
 if(n){n.textContent=msg;}
 }
 </script>
-<script nonce='48d092b83ba694bd78a90c07acd10f4b3065942cd8292dc7'>
+<script nonce='a372a7808ba9aec10a16fdd00bb4cd78bd0a3753187d1874'>
 /* hbmenu.js *************************************************************/
 (function() {
 var hbButton = document.getElementById("hbbtn");
