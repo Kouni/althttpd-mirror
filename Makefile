@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <base href="https://sqlite.org/althttpd/doc/trunk/althttpd.md">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-26b2e4186ff69d6f534237c44d41f0e026e74d5487da40c0'; style-src 'self' 'unsafe-inline'; img-src * data:">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-a85d538794a3190ea7f7b69a2f9088ff368ff4055b2cbea9'; style-src 'self' 'unsafe-inline'; img-src * data:">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Althttpd: The Althttpd Webserver</title>
 <link rel="alternate" type="application/rss+xml" title="RSS Feed"  href="/althttpd/timeline.rss">
@@ -367,7 +367,7 @@ reset.</p>
 <code>-DBANISH_TIME=N</code>, where N is a number of seconds defaulting to 300.</p>
 
 </div>
-<script nonce='26b2e4186ff69d6f534237c44d41f0e026e74d5487da40c0'>/* builtin.c:637 */
+<script nonce='a85d538794a3190ea7f7b69a2f9088ff368ff4055b2cbea9'>/* builtin.c:637 */
 (function(){
 if(window.NodeList && !NodeList.prototype.forEach){NodeList.prototype.forEach = Array.prototype.forEach;}
 if(!window.fossil) window.fossil={};
@@ -389,7 +389,7 @@ if(fossil.config.skin.isDark) document.body.classList.add('fossil-dark-style');
 window.fossil.page = {name:"doc/trunk/althttpd.md"};
 })();
 </script>
-<script nonce='26b2e4186ff69d6f534237c44d41f0e026e74d5487da40c0'>/* doc.c:438 */
+<script nonce='a85d538794a3190ea7f7b69a2f9088ff368ff4055b2cbea9'>/* doc.c:438 */
 window.addEventListener('load', ()=>window.fossil.pikchr.addSrcView(), false);
 </script>
 </div>
@@ -398,13 +398,13 @@ This page was generated in about
 0.008s by
 Fossil 2.29 [896a4636ae] 2026-07-24 22:13:46
 </footer>
-<script nonce="26b2e4186ff69d6f534237c44d41f0e026e74d5487da40c0">/* style.c:944 */
+<script nonce="a85d538794a3190ea7f7b69a2f9088ff368ff4055b2cbea9">/* style.c:944 */
 function debugMsg(msg){
 var n = document.getElementById("debugMsg");
 if(n){n.textContent=msg;}
 }
 </script>
-<script nonce='26b2e4186ff69d6f534237c44d41f0e026e74d5487da40c0'>
+<script nonce='a85d538794a3190ea7f7b69a2f9088ff368ff4055b2cbea9'>
 /* hbmenu.js *************************************************************/
 (function() {
 var hbButton = document.getElementById("hbbtn");
