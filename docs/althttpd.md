@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <base href="https://sqlite.org/althttpd/doc/trunk/althttpd.md">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-3daaaf2998015caf28d4e1f20f74c7f8ea86811581decf56'; style-src 'self' 'unsafe-inline'; img-src * data:">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'nonce-2101fa8c080f62f4f34d3c04dc615cfc23bd1baf211c7aea'; style-src 'self' 'unsafe-inline'; img-src * data:">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Althttpd: The Althttpd Webserver</title>
 <link rel="alternate" type="application/rss+xml" title="RSS Feed"  href="/althttpd/timeline.rss">
@@ -367,7 +367,7 @@ reset.</p>
 <code>-DBANISH_TIME=N</code>, where N is a number of seconds defaulting to 300.</p>
 
 </div>
-<script nonce='3daaaf2998015caf28d4e1f20f74c7f8ea86811581decf56'>/* builtin.c:637 */
+<script nonce='2101fa8c080f62f4f34d3c04dc615cfc23bd1baf211c7aea'>/* builtin.c:637 */
 (function(){
 if(window.NodeList && !NodeList.prototype.forEach){NodeList.prototype.forEach = Array.prototype.forEach;}
 if(!window.fossil) window.fossil={};
@@ -389,22 +389,22 @@ if(fossil.config.skin.isDark) document.body.classList.add('fossil-dark-style');
 window.fossil.page = {name:"doc/trunk/althttpd.md"};
 })();
 </script>
-<script nonce='3daaaf2998015caf28d4e1f20f74c7f8ea86811581decf56'>/* doc.c:438 */
+<script nonce='2101fa8c080f62f4f34d3c04dc615cfc23bd1baf211c7aea'>/* doc.c:438 */
 window.addEventListener('load', ()=>window.fossil.pikchr.addSrcView(), false);
 </script>
 </div>
 <footer>
 This page was generated in about
-0.007s by
+0.006s by
 Fossil 2.29 [d04ad10377] 2026-08-28 11:49:43
 </footer>
-<script nonce="3daaaf2998015caf28d4e1f20f74c7f8ea86811581decf56">/* style.c:944 */
+<script nonce="2101fa8c080f62f4f34d3c04dc615cfc23bd1baf211c7aea">/* style.c:944 */
 function debugMsg(msg){
 var n = document.getElementById("debugMsg");
 if(n){n.textContent=msg;}
 }
 </script>
-<script nonce='3daaaf2998015caf28d4e1f20f74c7f8ea86811581decf56'>
+<script nonce='2101fa8c080f62f4f34d3c04dc615cfc23bd1baf211c7aea'>
 /* hbmenu.js *************************************************************/
 (function() {
 var hbButton = document.getElementById("hbbtn");
